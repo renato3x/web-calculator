@@ -1,0 +1,72 @@
+:root {
+  --color-primary: #1D293A;
+  --color-secondary: #354357;
+  --color-terc-tertiary: #6C63FF;
+  --text-color-primary: #ffffffc9;
+  --text-color-secondary: #ffffff9a;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.calculator {
+  width: 100%;
+  min-height: 85vh;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-primary) !important;
+}
+
+.calculator .container {
+  height: inherit;
+}
+
+.container .form-row {
+  width: inherit;
+}
+
+.container .form-row button {
+  height: 50px;
+  border: 0;
+  font-size: 23px;
+  color: var(--text-color-primary);
+  background: var(--color-secondary);
+  box-shadow: 2px 2px 3px #1f1e1e33;
+}
+
+#result, #view {
+  resize: none;
+  height: 120px;
+  border-radius: 0;
+  border: none;
+  line-height: 130px;
+  font-size: 30px;
+  text-align: end;
+  overflow-x: auto;
+  overflow-y: hidden;
+  color: var(--text-color-primary);
+  background: var(--color-primary);
+}
+
+#result {
+  font-size: 25px;
+  height: 40px;
+  line-height: 1.5;
+  color: var(--text-color-secondary);
+}
+
+#result:focus {
+  outline: none;
+}
+
+.btn-calc-symbol, #sup, #btn-calc-result {
+  background: var(--color-terc-tertiary) !important;
+}

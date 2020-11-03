@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css, javascript, calculator">
+    <meta name="description" content="Uma calculadora simples criada por Renato Pereira">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <div class="calculator d-flex">
+            <form class="container flex-grow-1 p-0">
+              <div class="form-row m-0">
+                <div class="col-12 p-0">
+                  <textarea class="form-control" id="view" disabled readonly></textarea>
+                </div>
+              </div>
+      
+              <div class="form-row m-0 mt-4">
+                <div class="col-3">
+                  <button class="btn-block font-weight-light" id="reset" accesskey="c" type="button">C</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block font-weight-light" id="delete" type="button">CE</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block font-weight-light" type="button" id="sup" accesskey="s" value="&sup2;">&sup2;</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block btn-calc-symbol font-weight-light" type="button" value="&plus;">&plus;</button>
+                </div>
+              </div>
+      
+              <div class="form-row m-0 mt-4">
+                <div class="col-3">
+                  <button class="btn-block btn-calc-number font-weight-bold" type="button" value="1">1</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block btn-calc-number font-weight-bold" type="button" value="2">2</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block btn-calc-number font-weight-bold" type="button" value="3">3</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block btn-calc-symbol font-weight-light" type="button" value="&minus;">&minus;</button>
+                </div>
+              </div>
+      
+              <div class="form-row m-0 mt-4">
+                <div class="col-3">
+                  <button class="btn-block btn-calc-number font-weight-bold" type="button" value="4">4</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block btn-calc-number font-weight-bold" type="button" value="5">5</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block btn-calc-number font-weight-bold" type="button"value="6">6</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block btn-calc-symbol font-weight-light" type="button" value="&times;">&times;</button>
+                </div>
+              </div>
+      
+              <div class="form-row m-0 mt-4">
+                <div class="col-3">
+                  <button class="btn-block btn-calc-number font-weight-bold" type="button" value="7">7</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block btn-calc-number font-weight-bold" type="button" value="8">8</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block btn-calc-number font-weight-bold" type="button" value="9">9</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block btn-calc-symbol font-weight-light" type="button" value="&divide;">&divide;</button>
+                </div>
+              </div>
+      
+              <div class="form-row m-0 mt-4">
+                <div class="col-6">
+                  <button class="btn-block btn-calc-number font-weight-light" type="button" value="0">0</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block font-weight-bold" id="point" type="button" value=".">.</button>
+                </div>
+                <div class="col-3">
+                  <button class="btn-block font-weight-light" id="btn-calc-result" type="button">&equals;</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="../public/js/utils/replacer.js"></script>
+    <script src="../public/js/utils/parseSupToPow.js"></script>
+    <script src="../public/js/index.js"></script>
+    <script src="../public/js/keyboard.js"></script>
+  </body>
+</html>
